@@ -137,6 +137,15 @@
       background: #d50000;
     }
 
+    /* Contenedor de botones ubicación */
+    .ubicaciones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; /* espacio fijo entre botones */
+      margin: 1.5rem 0;
+    }
+
     /* Vestimenta */
     .vestimenta {
       margin-top: 1.5rem;
@@ -192,12 +201,14 @@
     <hr class="separador">
 
     <!-- Botones de ubicación -->
-    <button class="btn" onclick="window.open('https://maps.app.goo.gl/Nw3w6kGAKN4Q1Zni8', '_blank')">
-      📍 Ver Iglesia
-    </button>
-    <button class="btn" onclick="window.open('https://maps.app.goo.gl/2Y2KY7bqUjW5rAZF7', '_blank')">
-      📍 Ver Salón
-    </button>
+    <div class="ubicaciones">
+      <button class="btn" onclick="window.open('https://maps.google.com/?q=iglesia+direccion', '_blank')">
+        📍 Ver Iglesia
+      </button>
+      <button class="btn" onclick="window.open('https://maps.google.com/?q=salon+direccion', '_blank')">
+        📍 Ver Salón
+      </button>
+    </div>
 
     <!-- Vestimenta -->
     <div class="vestimenta">
